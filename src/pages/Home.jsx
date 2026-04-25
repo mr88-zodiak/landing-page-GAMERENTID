@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect, useRef, useContext } from "react";
-import Navbar from "../component/Navbar";
-import Hero from "../component/HeroSection";
-import Consoles from "../component/Console";
-import HowItWorks from "../component/FAQ";
-import Features from "../component/feature";
-import CTABanner from "../component/CTABanner";
-import Footer from "../component/Footer";
+import Navbar from "../components/Navbar";
+import Hero from "../components/HeroSection";
+import Consoles from "../components/Console";
+import HowItWorks from "../components/FAQ";
+import Features from "../components/feature";
+import CTABanner from "../components/CTABanner";
+import Footer from "../components/Footer";
 import { ThemeContext } from "../App";
 export default function Home() {
   const { theme, setTheme } = useContext(ThemeContext);

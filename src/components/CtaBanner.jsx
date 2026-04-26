@@ -3,7 +3,7 @@ import { useContext } from "react";
 import FadeIn from "./FadeIn";
 import { ThemeContext } from "../App";
 
-function CTABanner() {
+function CtaBanner() {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
     <section className={theme === "dark" ? "bg-zinc-950 py-16 px-6 transition-colors duration-300" : "bg-white py-16 px-6 transition-colors duration-300"}>

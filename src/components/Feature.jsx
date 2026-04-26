@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import FadeIn from "./FadeIn";
 import { ThemeContext } from "../App";
-function Features({ features }) {
+function Feature({ features }) {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
     <section className={theme === "dark" ? "bg-zinc-900/50 py-20 px-6 transition-colors duration-300" : "bg-zinc-50 py-20 px-6 transition-colors duration-300"}>

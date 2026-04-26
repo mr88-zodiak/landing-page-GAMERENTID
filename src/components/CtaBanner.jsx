@@ -22,4 +22,4 @@ function CtaBanner() {
   );
 }
 
-export default CTABanner;
+export default CtaBanner;

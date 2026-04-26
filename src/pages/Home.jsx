@@ -55,7 +55,7 @@ export default function Home() {
         <Console consoles={consoles} />
         <FAQ steps={steps} />
         <Feature features={features} />
-        <CTABanner />
+        <CtaBanner />
       </main>
       <Footer />
     </div>

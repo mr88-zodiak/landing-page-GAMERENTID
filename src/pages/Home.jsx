@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect, useRef, useContext } from "react";
 import Navbar from "../components/Navbar";
-import Hero from "../components/HeroSection";
-import Consoles from "../components/Console";
-import HowItWorks from "../components/FAQ";
+import HeroSection from "../components/HeroSection";
+import Console from "../components/Console";
+import FAQ from "../components/FAQ";
 import Feature from "../components/Feature";
-import CTABanner from "../components/CTABanner";
+import CtaBanner from "../components/CtaBanner";
 import Footer from "../components/Footer";
 import { ThemeContext } from "../App";
 export default function Home() {
@@ -51,9 +51,9 @@ export default function Home() {
     <div className={theme === "dark" ? "min-h-screen bg-zinc-950" : "min-h-screen bg-white"}>
       <Navbar links={links} />
       <main>
-        <Hero heroStats={heroStats} />
-        <Consoles consoles={consoles} />
-        <HowItWorks steps={steps} />
+        <HeroSection heroStats={heroStats} />
+        <Console consoles={consoles} />
+        <FAQ steps={steps} />
         <Feature features={features} />
         <CTABanner />
       </main>

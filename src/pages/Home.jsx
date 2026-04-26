@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/HeroSection";
 import Consoles from "../components/Console";
 import HowItWorks from "../components/FAQ";
-import Features from "../components/feature";
+import Feature from "../components/Feature";
 import CTABanner from "../components/CTABanner";
 import Footer from "../components/Footer";
 import { ThemeContext } from "../App";
@@ -54,7 +54,7 @@ export default function Home() {
         <Hero heroStats={heroStats} />
         <Consoles consoles={consoles} />
         <HowItWorks steps={steps} />
-        <Features features={features} />
+        <Feature features={features} />
         <CTABanner />
       </main>
       <Footer />

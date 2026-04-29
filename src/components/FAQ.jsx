@@ -6,7 +6,7 @@ import { ThemeContext } from "../App";
 function HowItWorks({ steps }) {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <section className={theme === "dark" ? "bg-zinc-950 border-y border-zinc-800 py-20 px-6 transition-colors duration-300" : "bg-white border-y border-zinc-200 py-20 px-6 transition-colors duration-300"}>
+    <section className={theme === "dark" ? "bg-zinc-950 border-y border-zinc-800 py-20 px-6 transition-colors duration-300" : "bg-white border-y border-zinc-200 py-20 px-6 transition-colors duration-300"} id="how-it-works">
       <div className="max-w-5xl mx-auto">
         <FadeIn>
           <div className="text-center mb-14">

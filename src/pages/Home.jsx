@@ -38,10 +38,11 @@ export default function Home() {
     { i: "🎁", t: "Diskon Member", d: "Sewa 5x+, dapat diskon 15% untuk setiap order berikutnya." },
   ];
   const links = [
+    { name: "Home", href: "#home" },
     { name: "Konsol", href: "#consoles" },
-    { name: "Harga", href: "#pricing" },
-    { name: "Cara Sewa", href: "#how-it-works" },
-    { name: "Tentang", href: "#about" },
+    // { name: "Harga", href: "#pricing" },
+    { name: "Faq", href: "#how-it-works" },
+    { name: "Contact us", href: "#contact" },
   ];
   //   useEffect(() => {
   //     document.documentElement.classList.toggle("dark", dark);

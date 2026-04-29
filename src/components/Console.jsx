@@ -6,7 +6,7 @@ import { ThemeContext } from "../App";
 function Consoles({ consoles }) {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <section className={theme === "dark" ? "bg-zinc-900/60 py-20 px-6 transition-colors duration-300" : "bg-zinc-50 py-20 px-6 transition-colors duration-300"}>
+    <section className={theme === "dark" ? "bg-zinc-900/60 py-20 px-6 transition-colors duration-300" : "bg-zinc-50 py-20 px-6 transition-colors duration-300"} id="consoles">
       <div className="max-w-5xl mx-auto">
         <FadeIn>
           <div className="text-center mb-12">

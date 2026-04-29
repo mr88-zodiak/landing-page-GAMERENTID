@@ -4,9 +4,11 @@ import FadeIn from "./FadeIn";
 import { ThemeContext } from "../App";
 
 function Hero({ heroStats }) {
+  const pesan = "Halo, saya tertarik untuk menyewa PlayStation. Bisa bantu saya dengan informasi lebih lanjut?";
+  const waLink = `https://wa.me/6287877763571?text=${encodeURIComponent(pesan)}`;
   const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <section className={theme === "dark" ? "relative overflow-hidden bg-zinc-950" : "relative overflow-hidden bg-white"} id="hero">
+    <section className={theme === "dark" ? "relative overflow-hidden bg-zinc-950" : "relative overflow-hidden bg-white"} id="home">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-125 h-80 bg-red-500/10 rounded-full blur-3xl" />
       </div>
@@ -38,11 +40,16 @@ function Hero({ heroStats }) {
 
         <FadeIn delay={300}>
           <div className="flex flex-wrap gap-3 justify-center mb-14">
-            <button className="flex items-center gap-2 bg-red-600 dark:bg-red-500 text-white font-semibold px-7 py-3.5 rounded-xl border-0 cursor-pointer transition-all hover:opacity-90 hover:scale-105 active:scale-95 shadow-lg shadow-red-500/30">
+            <button
+              onClick={() => window.open(waLink, "_blank")}
+              className="flex items-center gap-2 bg-red-600 dark:bg-red-500 text-white font-semibold px-7 py-3.5 rounded-xl border-0 cursor-pointer transition-all hover:opacity-90 hover:scale-105 active:scale-95 shadow-lg shadow-red-500/30"
+            >
               🎮 Mulai Sewa →
             </button>
             <button className="flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-red-500 hover:text-red-600 dark:hover:text-red-400 font-medium px-7 py-3.5 rounded-xl bg-transparent cursor-pointer transition-all">
-              ⚡ Lihat Koleksi
+              <a href="#consoles" className="text-decoration: underline;">
+                ⚡ Lihat Koleksi
+              </a>
             </button>
           </div>
         </FadeIn>

@@ -41,7 +41,7 @@ export default function Home() {
     { name: "Home", href: "#home" },
     { name: "Konsol", href: "#consoles" },
     // { name: "Harga", href: "#pricing" },
-    { name: "Faq", href: "#how-it-works" },
+    { name: "Cara sewa", href: "#how-it-works" },
     { name: "Contact us", href: "#contact" },
   ];
   //   useEffect(() => {
